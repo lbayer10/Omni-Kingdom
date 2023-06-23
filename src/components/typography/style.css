@@ -1,0 +1,15 @@
+.typography-title-default {
+    color: var(--font-color-1);
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-300);
+    font-family: var(--font-family-title);
+    text-shadow: var(--font-shadow-title-1);
+    text-transform: uppercase;
+}
+
+.typography-text-default {
+    color: var(--font-color-2);
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-400);
+    font-family: var(--font-family-text);
+}

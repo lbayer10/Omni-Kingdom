@@ -1,0 +1,39 @@
+.divider {
+    height: 55px;
+    margin: -18px -15px;
+    position: relative;
+    z-index: 1;
+}
+
+.divider-rule {
+    background: url('../../assets/img/divider-sprite.png') repeat-x 50% 100%;
+    border: 0;
+    height: 55px;
+    left: 50%;
+    margin: 0 0 0 -82px;
+    position: absolute;
+    top: 5px;
+    width: 164px;
+}
+
+.divider:before {
+    left: 0;
+    margin-right: 82px;
+    right: 50%;
+    background: url('../../assets/img/divider-sprite.png') repeat-x 50% 0;
+    content: "";
+    height: 55px;
+    position: absolute;
+    top: 0;
+}
+
+.divider:after {
+    left: 50%;
+    margin-left: 82px;
+    right: 0;
+    background: url('../../assets/img/divider-sprite.png') repeat-x 50% 0;
+    content: "";
+    height: 55px;
+    position: absolute;
+    top: 0;
+}
