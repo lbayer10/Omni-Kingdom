@@ -1,5 +1,6 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
+import './globals.css';
+import { Inter } from 'next/font/google';
+import { PlayerDrawer } from '@/components/drawer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,23 +19,19 @@ export default function RootLayout({
             <head>
                 {/* FUNCKY THEME STYLE */}
                 <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
-                <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
-                <link rel="stylesheet" href="assets/css/mind-icons-line.css"/>
                 <link rel="stylesheet" href="assets/css/funky-style.css"/>
                 <link rel="stylesheet" href="assets/css/owl.carousel.css"/>
                 <link rel="stylesheet" href="assets/css/owl.transitions.css"/>
                 <link rel="stylesheet" href="assets/css/color-green.css"/>
             </head>
 
-            <body className={inter.className}>{children}</body>
+            <body className={inter.className}>
+                {children}
+                <PlayerDrawer/>
+            </body>
             
             {/* FUNCKY THEME SCRIPT */}
-            <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
-            <script type="text/javascript" src="assets/js/royal_preloader.min.js"></script> 
-            <script type="text/javascript" src="assets/js/tether.min.js"></script>
-            <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-            <script type="text/javascript" src="assets/js/plugins.js"></script>  
-            <script type="text/javascript" src="assets/js/custom-op-corporate.js"></script>  
+            <script type="text/javascript" src="assets/js/tether.min.js" async></script>
         </html>
     )
 }

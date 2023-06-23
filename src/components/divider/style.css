@@ -1,8 +1,5 @@
 .divider {
-    height: 55px;
     margin: -18px -15px;
-    position: relative;
-    z-index: 1;
 }
 
 .divider-rule {

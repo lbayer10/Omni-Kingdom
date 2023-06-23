@@ -41,6 +41,7 @@ html {
     --font-size-3: 3rem;
     --font-size-4: 1.2rem;
     --font-size-5: 1rem;
+    --font-size-6: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {

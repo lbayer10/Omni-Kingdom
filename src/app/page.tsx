@@ -12,8 +12,6 @@ const { HeroCard } = Card();
 export default function Home() {
     return (
         <main>
-            <div id="royal_preloader"></div>
-
 	
             {/* <!-- Nav and Logo
             ================================================== --> */}
@@ -27,7 +25,7 @@ export default function Home() {
                                     <span className="navbar-toggler-icon"></span>
                                 </button>
                                 <a className="navbar-brand" href="index.html">
-                                    <Image width={100} height={100} src="/img/logo-light.png" alt="" className="" />
+                                    {/* <Image width={100} height={100} src="/img/logo-light.png" alt="" className="" /> */}
                                 </a>
                                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavMenuMain">
                                     <ul className="navbar-nav">
@@ -69,7 +67,7 @@ export default function Home() {
                                             <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink-shop">
                                                 <div className="drop-shop-block">
                                                     <span className="close"></span>
-                                                    <Image width={100} height={100} src="/img/shop1.jpg" alt="" className="rounded" />
+                                                    {/* <Image width={100} height={100} src="/img/shop1.jpg" alt="" className="rounded" /> */}
                                                     <h6>Shop item one</h6>
                                                     <div className="clearfix"></div>
                                                     <p>2 x $47.00</p>
@@ -78,7 +76,7 @@ export default function Home() {
                                                 </div>
                                                 <div className="drop-shop-block">
                                                     <span className="close"></span>	
-                                                    <Image width={100} height={100} src="/img/shop2.jpg" alt="" className="rounded" />
+                                                    {/* <Image width={100} height={100} src="/img/shop2.jpg" alt="" className="rounded" /> */}
                                                     <h6>Shop item two</h6>
                                                     <div className="clearfix"></div>
                                                     <p>1 x $72.00</p>
@@ -150,13 +148,13 @@ export default function Home() {
                 <div className="section padding-top-1st padding-bottom over-hide">
                     <div className="parallax" style={{ backgroundImage: 'img/parallax-hero-12.jpg' }}></div>
                     <div className="grey-fade-over"></div>
-                    <div className="container z-bigger parallax-fade-top">
+                    <div className="container parallax-fade-top">
                         <div className="row justify-content-center">
                             <div className="col-lg-6">
                                 <div className="video-section">
                                     <figure className="vimeo rounded-2 img-raised over-hide"> 
                                         <a href="https://player.vimeo.com/video/219627581">
-                                            <Image width={100} height={100} src="/img/video-4.jpg" alt="image" className="rounded-2 over-hide" />
+                                            {/* <Image width={100} height={100} src="/img/video-4.jpg" alt="image" className="rounded-2 over-hide" /> */}
                                         </a>
                                     </figure>
                                 </div>
@@ -175,7 +173,7 @@ export default function Home() {
                 <Divider />
 
                 <div className="home-overview">
-                    <div className="section padding-top-bottom-smaller z-bigger-2" id="scroll-top">
+                    <div className="section padding-top-bottom-smaller" id="scroll-top">
                         <div className="container">
                             <div className="row">
                                 <div className="col-md-12">	
@@ -236,7 +234,7 @@ export default function Home() {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-5 col-md-12">
-                                <Image width={100} height={100} src="/img/content-1.jpg" alt="" className="img-fluid rounded img-raised" />	
+                                {/* <Image width={100} height={100} src="/img/content-1.jpg" alt="" className="img-fluid rounded img-raised" />	 */}
                             </div>
                             <div className="col-lg-1 col-md-12"></div>
                             <div className="col-lg-6 col-md-12 mt-5 mt-lg-0 mt-xl-5">	
@@ -272,7 +270,7 @@ export default function Home() {
                                 <div id="owl-testimonials" className="owl-carousel owl-theme no-hidden">											 
                                     <div className="item">								 
                                         <div className="testimonials-box-1 bigger-img border-on-light">
-                                            <Image width={100} height={100}  src="/img/t1.jpg" alt="" />
+                                            {/* <Image width={100} height={100}  src="/img/t1.jpg" alt="" /> */}
                                             <p className="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
                                             <h6>Anna Furius</h6>
                                             <p><span>Alliance Motosport</span></p>
@@ -280,7 +278,7 @@ export default function Home() {
                                     </div>											
                                     <div className="item">						 
                                         <div className="testimonials-box-1 bigger-img border-on-light">
-                                            <Image width={100} height={100}  src="/img/t2.jpg" alt="" />
+                                            {/* <Image width={100} height={100}  src="/img/t2.jpg" alt="" /> */}
                                             <p className="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
                                             <h6>Alex Andrews</h6>
                                             <p><span>Creativity Media</span></p>
@@ -288,7 +286,7 @@ export default function Home() {
                                     </div>											
                                     <div className="item"> 						 
                                         <div className="testimonials-box-1 bigger-img border-on-light">
-                                            <Image width={100} height={100}  src="/img/t3.jpg" alt="" />
+                                            {/* <Image width={100} height={100}  src="/img/t3.jpg" alt="" /> */}
                                             <p className="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
                                             <h6>Frank Furius</h6>
                                             <p><span>Alliance Motosport</span></p>
@@ -296,7 +294,7 @@ export default function Home() {
                                     </div>												
                                     <div className="item"> 						 
                                         <div className="testimonials-box-1 bigger-img border-on-light">
-                                            <Image width={100} height={100}  src="/img/t4.jpg" alt="" />
+                                            {/* <Image width={100} height={100}  src="/img/t4.jpg" alt="" /> */}
                                             <p className="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
                                             <h6>Marco Kulis</h6>
                                             <p><span>Guide Magazin</span></p>
@@ -457,7 +455,7 @@ export default function Home() {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-4 hidden-sm-down" data-scroll-reveal="enter bottom move 80px over 1s after 0.2s">	
-                                <Image width={100} height={100} src="/img/woman.png" alt="" className="img-fluid" />
+                                {/* <Image width={100} height={100} src="/img/woman.png" alt="" className="img-fluid" /> */}
                             </div>
                             <div className="col-md-1">	
                             </div>
@@ -481,32 +479,32 @@ export default function Home() {
                         <div className="row">
                             <div className="col-md-2">
                                 <a href="#">
-                                    <Image width={100} height={100}  src="/img/logos/white1.png" className="img-120 mx-auto" alt="" />
+                                    {/* <Image width={100} height={100}  src="/img/logos/white1.png" className="img-120 mx-auto" alt="" /> */}
                                 </a>
                             </div>
                             <div className="col-md-2 mt-4 mt-md-0">
                                 <a href="#">
-                                    <Image width={100} height={100}  src="/img/logos/white2.png" className="img-120 mx-auto" alt="" />
+                                    {/* <Image width={100} height={100}  src="/img/logos/white2.png" className="img-120 mx-auto" alt="" /> */}
                                 </a>
                             </div>
                             <div className="col-md-2 mt-4 mt-md-0">
                                 <a href="#">
-                                    <Image width={100} height={100}  src="/img/logos/white8.png" className="img-120 mx-auto" alt="" />
+                                    {/* <Image width={100} height={100}  src="/img/logos/white8.png" className="img-120 mx-auto" alt="" /> */}
                                 </a>
                             </div>
                             <div className="col-md-2 mt-4 mt-md-0">
                                 <a href="#">
-                                    <Image width={100} height={100}  src="/img/logos/white10.png" className="img-120 mx-auto" alt="" />
+                                    {/* <Image width={100} height={100}  src="/img/logos/white10.png" className="img-120 mx-auto" alt="" /> */}
                                 </a>
                             </div>
                             <div className="col-md-2 mt-4 mt-md-0">
                                 <a href="#">
-                                    <Image width={100} height={100}  src="/img/logos/white5.png" className="img-120 mx-auto" alt="" />
+                                    {/* <Image width={100} height={100}  src="/img/logos/white5.png" className="img-120 mx-auto" alt="" /> */}
                                 </a>
                             </div>
                             <div className="col-md-2 mt-4 mt-md-0">
                                 <a href="#">
-                                    <Image width={100} height={100}  src="/img/logos/white6.png" className="img-120 mx-auto" alt="" />
+                                    {/* <Image width={100} height={100}  src="/img/logos/white6.png" className="img-120 mx-auto" alt="" /> */}
                                 </a>
                             </div>
                         </div>
@@ -518,7 +516,7 @@ export default function Home() {
             {/* <!-- Footer Dark Block
             ================================================== --> */}
 
-            <div className="section padding-top background-dark-2 over-hide footer-1 dark z-bigger-2">
+            <div className="section padding-top background-dark-2 over-hide footer-1 dark">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
@@ -552,7 +550,7 @@ export default function Home() {
                             </ul>
                         </div>
                         <div className="col-md-3 mt-4 mt-md-0 logo-footer-100">
-                            <Image width={100} height={100} src="/img/logo-light.png" alt="" className="mb-5" />
+                            {/* <Image width={100} height={100} src="/img/logo-light.png" alt="" className="mb-5" /> */}
                             <div className="separator-wrap">	
                                 <span className="separator"><span className="separator-line dashed"></span></span>
                             </div>
