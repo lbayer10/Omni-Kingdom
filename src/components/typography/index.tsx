@@ -4,14 +4,14 @@ import './style.css';
 interface TitleProps {
     level?: 'primary' | 'default';
     align?: 'left' | 'center' | 'right';
-    className: string,
+    className?: string,
     children: React.ReactNode;
 }
 
 interface ParagraphProps {
     level?: 'primary' | 'default';
     align?: 'left' | 'center' | 'right';
-    className: string,
+    className?: string,
     children: React.ReactNode;
 }
 

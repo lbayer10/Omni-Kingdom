@@ -35,7 +35,7 @@ export const PlayerDrawer = () => {
                     <label htmlFor="omni-player-toggle" className='mt-10 text-center cursor-pointer omni-player-hero'>Lion</label>
                 </div>
             </div> */}
-            <div className='omni-player-content' style={{display: isShow ? 'none' : 'block'}} ref={drawerRef}>
+            <div className='player-drawer' style={{display: isShow ? 'none' : 'block'}} ref={drawerRef}>
                 <div className='player-drawer-head mx-auto pt-3'>
                     <Image className='mx-auto w-[90px] h-[90px]' src={require('../../assets/img/hero.png')} alt='hero' />
                     <div className='player-drawer-name text-center mt-[80px]'>Tyche</div>

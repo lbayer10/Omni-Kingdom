@@ -1,4 +1,5 @@
 .divider {
+    z-index: 1;
     margin: -18px -15px;
 }
 

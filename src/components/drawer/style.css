@@ -32,7 +32,7 @@
     to { left: 10px; }    
 }
 
-.omni-player-hero {
+.player-drawer {
     font-family: 'El Messiri';
     font-style: normal;
     font-weight: 700;
@@ -41,6 +41,7 @@
     text-align: center;
 
     color: #FFD37E;
+    z-index: var(--z-index-9);
 
     text-shadow: 0px 0px 10px rgba(255, 122, 0, 0.5);
 }

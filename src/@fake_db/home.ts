@@ -22,3 +22,14 @@ export const heroCard = [
         description: 'Void claimed all in the Halls of Reflection as Roth rised from the Stone, his voice echoing again in the sultry darkness. His enemies fallen, their eyesight blurred, their powers escaping their body as he consumed their souls...'
     },
 ]
+
+export const journeyList = [
+    "/../../assets/img/carousel/gallery-1.jpg",
+    "/../../assets/img/carousel/gallery-2.jpg",
+    "/../../assets/img/carousel/gallery-3.jpg",
+    "/../../assets/img/carousel/gallery-4.jpg",
+    "/../../assets/img/carousel/gallery-5.jpg",
+    "/../../assets/img/carousel/gallery-6.jpg",
+    "/../../assets/img/carousel/gallery-7.jpg",
+    "/../../assets/img/carousel/gallery-8.jpg",
+]

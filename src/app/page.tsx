@@ -2,8 +2,9 @@ import Image from "next/image";
 import { Card } from "@/components/card";
 import { Divider } from "@/components/divider";
 import { Typography } from "@/components/typography";
-import { heroCard } from "@/@fake_db/home";
+import { Carousel } from "@/components/carousel";
 
+import { heroCard, journeyList } from "@/@fake_db/home";
 import "./style.css";
 
 const { Title, Paragraph } = Typography();
@@ -12,14 +13,14 @@ const { HeroCard } = Card();
 export default function Home() {
     return (
         <main>
-	
+
             {/* <!-- Nav and Logo
             ================================================== --> */}
 
             <div id="menu-wrap" className="cbp-af-header black-menu-background-1st-trans menu-fixed-padding-small menu-shadow">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12">	
+                        <div className="col-md-12">
                             <nav className="navbar navbar-toggleable-md navbar-inverse bg-inverse bg-faded">
                                 <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavMenuMain" aria-controls="navbarNavMenuMain" aria-expanded="false" aria-label="Toggle navigation">
                                     <span className="navbar-toggler-icon"></span>
@@ -75,7 +76,7 @@ export default function Home() {
                                                     <div className="dropdown-divider"></div>
                                                 </div>
                                                 <div className="drop-shop-block">
-                                                    <span className="close"></span>	
+                                                    <span className="close"></span>
                                                     {/* <Image width={100} height={100} src="/img/shop2.jpg" alt="" className="rounded" /> */}
                                                     <h6>Shop item two</h6>
                                                     <div className="clearfix"></div>
@@ -97,10 +98,10 @@ export default function Home() {
                                         </li>
                                     </ul>
                                 </div>
-                            </nav>		
+                            </nav>
                         </div>
-                    </div>	
-                </div>		
+                    </div>
+                </div>
             </div>
 
 
@@ -123,9 +124,9 @@ export default function Home() {
                                                 <i className="fa fa-search"></i>
                                             </button> */}
                                         </div>
-                                    </div>	
-                                </div>	
-                            </div>	
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -144,28 +145,19 @@ export default function Home() {
 
                 {/* <!-- Hero Slider Block
                 ================================================== --> */}
-                
-                <div className="section padding-top-1st padding-bottom over-hide">
-                    <div className="parallax" style={{ backgroundImage: 'img/parallax-hero-12.jpg' }}></div>
+
+                <div className="section big-75-height over-hide">
+                    <div className="parallax" style={{ backgroundImage: 'url(assets/img/banner-bg.jpg)', backgroundPosition: '50% -50px' }}></div>
                     <div className="grey-fade-over"></div>
-                    <div className="container parallax-fade-top">
-                        <div className="row justify-content-center">
-                            <div className="col-lg-6">
-                                <div className="video-section">
-                                    <figure className="vimeo rounded-2 img-raised over-hide"> 
-                                        <a href="https://player.vimeo.com/video/219627581">
-                                            {/* <Image width={100} height={100} src="/img/video-4.jpg" alt="image" className="rounded-2 over-hide" /> */}
-                                        </a>
-                                    </figure>
+                    <div className="hero-bottom-wrap text-center z-bigger">
+                        <div className="container-fluid parallax-fade-top" style={{ top: 125 }}>
+                            <div className="row">
+                                <div className="col-md-12">
+                                    <h4>Omni Kingdom</h4>
                                 </div>
                             </div>
-                            <div className="col-lg-6 app-hero-text text-center text-lg-left pt-5 pt-lg-0 pl-lg-5 mt-xl-4">	
-                                <h2 className="color-white">Give your startup<br />a jump start</h2>
-                                <p className="mt-4 mb-5">beautifully carefully designed</p>	
-                                <a href="#scroll-top" className="btn btn-primary btn-simple btn-round btn-long scroll" >discover more</a>
-                            </div>
-                        </div>	
-                    </div>	
+                        </div>
+                    </div>
                 </div>
 
                 {/* <!-- Call To Action Block
@@ -176,32 +168,32 @@ export default function Home() {
                     <div className="section padding-top-bottom-smaller" id="scroll-top">
                         <div className="container">
                             <div className="row">
-                                <div className="col-md-12">	
+                                <div className="col-md-12">
                                     <div className="call-box-3 text-center text-md-center">
                                         <Title className="mt-[70px] pb-4" align="center">Now we've come Omni Kingdom</Title>
                                         <Paragraph className="w-[90%] m-auto" align="center">The Great War had been raging for years. Five tribes had been locked in battle, each determined to prove their superiority. The Aketi, the strongest and most experienced fighters, had been the first to start the war. For weeks, the five tribes had fought in a brutal war, each using every tactic they could think of. But in the end, it was the Aketi who emerged as the victors. The other tribes were forced to accept their rule, and the Great War was finally over. Though the war had ended, the legacy of it remained. The scars of battle could still be seen throughout the land, as a reminder of the sacrifices made by all the tribes. But the war had also brought the five tribes together, and in the end, that was the greatest victory of all.</Paragraph>
                                     </div>
                                 </div>
-                            </div>	
-                        </div>		
+                            </div>
+                        </div>
                     </div>
 
                     {/* <!-- Separator Line
                     ================================================== --> */}
-                    
+
                     <div className="section pt-4">
-                        <div className="container">	
+                        <div className="container">
                             <div className="row">
-                                <div className="col-md-12">	
+                                <div className="col-md-12">
                                     <div className="home-separator"></div>
                                 </div>
                             </div>
-                        </div>		
+                        </div>
                     </div>
 
                     {/* <!-- Services Block
                     ================================================== --> */}
-                        
+
                     <div className="section py-[80px] over-hide">
                         <div className="container">
                             <Title className="pb-5" align="center">Choose your hero</Title>
@@ -214,266 +206,150 @@ export default function Home() {
                                         </div>
                                     ))
                                 }
-                            </div>	
-                        </div>		
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
+
                 <Divider />
-                
+
             </div>
 
             <div className="section" id="about">
 
-                
+
 
                 {/* <!-- Content With Images Block
                 ================================================== --> */}
-                
-                <div className="section padding-top-bottom background-dark">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-5 col-md-12">
-                                {/* <Image width={100} height={100} src="/img/content-1.jpg" alt="" className="img-fluid rounded img-raised" />	 */}
-                            </div>
-                            <div className="col-lg-1 col-md-12"></div>
-                            <div className="col-lg-6 col-md-12 mt-5 mt-lg-0 mt-xl-5">	
-                                <div className="main-title on-dark no-subtitle">
-                                    <div className="main-subtitle-top mb-4">start your business</div>
-                                    <h4 className="mb-0">We build brands!</h4>	
+
+                <div className="home-journey">
+                    <div className="section padding-top-bottom-smaller" id="scroll-top">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-md-12">
+                                    <div className="call-box-3 text-center text-md-center">
+                                        <Title className="mt-[70px] pb-4" align="center">Begin your journey</Title>
+                                        <Paragraph className="w-[90%] m-auto" align="center">The ornate peace of these halls would be shattered now and then by the faint whispers of the Statue of a thousand faces, as the soul fragments collided and the Heroes met in glorious Combat. For them it would always be the first time, until someone's time to be free of this burden would come - then he'd regain consciousness of who he was and what he had to do. But, this time, something was different.</Paragraph>
+                                    </div>
                                 </div>
-                                <p className="lead color-white mb-5">Some people think design means how it looks. But of course, if you dig deeper, it's really how it works. Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people. Some people think design means how it looks.</p>
-                                <a href="contact-map.html" className="btn btn-primary btn-simple btn-round btn-long">get in touch</a>
                             </div>
-                        </div>	
-                    </div>	
+                        </div>
+                    </div>
+
+                    {/* <!-- Services Block
+                    ================================================== --> */}
+
+                    <div className="section py-[80px] over-hide">
+                        <div className="container">
+                            <div>
+                                <Carousel images={journeyList} />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
+
+                <Divider />
+
             </div>
 
             <div className="section" id="testimonials">
 
                 {/* <!-- Testimonials Block
                 ================================================== --> */}
-                    
-                <div className="section padding-top-bottom background-white over-hide">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-4">		
-                                <div className="main-title">
-                                    <div className="main-subtitle-top mb-4">testimonials</div>
-                                    <h4>Some of our clients saying about us.</h4>
-                                    <div className="main-subtitle-bottom smaller mt-3">Built with passion & intuitiveness in mind. Funky is a masterclass piece of work presented to you.</div>	
-                                </div>
-                            </div>
-                            <div className="col-lg-8 px-0">
-                                <div id="owl-testimonials" className="owl-carousel owl-theme no-hidden">											 
-                                    <div className="item">								 
-                                        <div className="testimonials-box-1 bigger-img border-on-light">
-                                            {/* <Image width={100} height={100}  src="/img/t1.jpg" alt="" /> */}
-                                            <p className="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-                                            <h6>Anna Furius</h6>
-                                            <p><span>Alliance Motosport</span></p>
-                                        </div>	
-                                    </div>											
-                                    <div className="item">						 
-                                        <div className="testimonials-box-1 bigger-img border-on-light">
-                                            {/* <Image width={100} height={100}  src="/img/t2.jpg" alt="" /> */}
-                                            <p className="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-                                            <h6>Alex Andrews</h6>
-                                            <p><span>Creativity Media</span></p>
-                                        </div>	
-                                    </div>											
-                                    <div className="item"> 						 
-                                        <div className="testimonials-box-1 bigger-img border-on-light">
-                                            {/* <Image width={100} height={100}  src="/img/t3.jpg" alt="" /> */}
-                                            <p className="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-                                            <h6>Frank Furius</h6>
-                                            <p><span>Alliance Motosport</span></p>
-                                        </div>	
-                                    </div>												
-                                    <div className="item"> 						 
-                                        <div className="testimonials-box-1 bigger-img border-on-light">
-                                            {/* <Image width={100} height={100}  src="/img/t4.jpg" alt="" /> */}
-                                            <p className="mt-4 mb-5">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-                                            <h6>Marco Kulis</h6>
-                                            <p><span>Guide Magazin</span></p>
-                                        </div>	
-                                    </div>						
-                                </div>
-                            </div>
-                        </div>	
-                    </div>		
-                </div>
-                
-            </div>
 
-            <div className="section" id="services">
-
-                {/* <!-- Half Blocks Grid
-                ================================================== --> */}
-                
-                <div className="section background-grey over-hide">
-                    <div className="container-fluid m-0 p-0 background-grey">
-                        <div className="row">		
-                            <div className="col-lg-4 row-in background-image-cover padding-top-bottom" style={{backgroundImage: 'img/parallax-6.jpg'}}>
-                                <div className="grey-fade-over"></div>	
-                            </div>
-                            <div className="col-lg-8 row-in padding-top-bottom">	
-                                <div className="section align-self-center text-left padding-on-grid-12">
-                                    <div className="main-title no-subtitle">
-                                        <div className="main-subtitle-top mb-4">unique and truly responsive</div>
-                                        <h3 className="mb-0">Moving boundaries into digital solution!</h3>	
+                <div className="home-overview">
+                    <div className="section padding-top-bottom-smaller" id="scroll-top">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-md-12">
+                                    <div className="call-box-3 text-center text-md-center">
+                                        <Title className="mt-[70px] pb-4" align="center">Choose your weapon</Title>
+                                        <Paragraph className="w-[90%] m-auto" align="center">Unleash your revenge upon mankind as you turn and look towards the human cities, only to see a great pillar of flame hit their cathedrals, the ensuing shockwave and flamewall erasing all signs of their kingdoms' existence.</Paragraph>
                                     </div>
-                                    <p className="lead mb-5">Some people think design means how it looks. But of course, if you dig deeper, it's really how it works. Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people. Some people think design means how it looks.</p>
-                                    <a href="#pricing" className="btn btn-primary btn-simple btn-round btn-long scroll">our pricing</a>
-                                </div>
-                            </div>	
-                        </div>	
-                    </div>	
-                </div>
-
-                {/* <!-- Icons Block
-                ================================================== --> */}
-                
-                <div className="section padding-top-bottom-small background-dark over-hide">
-                    <div className="container">	
-                        <div className="row">
-                            <div className="col-md-4 col-lg-2">	
-                                <div className="services-box-2 dark text-center">
-                                    <i className="funky-ui-icon icon-Monitor-phone"></i>
-                                    <p className="mt-3">Responsive</p>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-lg-2 mt-4 mt-md-0">	
-                                <div className="services-box-2 dark text-center">
-                                    <i className="funky-ui-icon icon-Approved-Window"></i>
-                                    <p className="mt-3">Perfect Design</p>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-lg-2 mt-4 mt-md-0">	
-                                <div className="services-box-2 dark text-center">
-                                    <i className="funky-ui-icon icon-Duplicate-Window"></i>
-                                    <p className="mt-3">Bootstrap 4</p>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-lg-2 mt-4 mt-lg-0">	
-                                <div className="services-box-2 dark text-center">
-                                    <i className="funky-ui-icon icon-Downward"></i>
-                                    <p className="mt-3">Free Updates</p>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-lg-2 mt-4 mt-lg-0">	
-                                <div className="services-box-2 dark text-center">
-                                    <i className="funky-ui-icon icon-Layer-Forward"></i>
-                                    <p className="mt-3">Modal Style</p>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-lg-2 mt-4 mt-lg-0">	
-                                <div className="services-box-2 dark text-center">
-                                    <i className="funky-ui-icon icon-Support"></i>
-                                    <p className="mt-3">Support</p>
                                 </div>
                             </div>
                         </div>
-                    </div>		
+                    </div>
+
+                    {/* <!-- Services Block
+                    ================================================== --> */}
+
+                    <div className="section py-[80px] over-hide">
+                        <div className="container">
+                            <div className="row">
+                                {
+                                    heroCard.map((item, index) => (
+                                        <div key={index} className="col-xs-12 col-md-6 col-lg-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+                                            <HeroCard className="" content={item} />
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
+
             </div>
 
-            <div className="section" id="pricing">
-
-                {/* <!-- Pricing Block
-                ================================================== --> */}
-                    
-                <div className="section padding-top-bottom background-grey over-hide" id="pricing">
-                    <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-md-8">	
-                                <div className="main-title text-center">
-                                    <div className="main-subtitle-top mb-4">our pricing</div>
-                                    <h3>From whiteboard sketches to pixel-perfect designs.</h3>
-                                    <div className="main-subtitle-bottom mt-3">our numbers</div>	
-                                </div>
+            <div className="section padding-top-bottom">
+                <div className="parallax-1"
+                    style={{ backgroundImage: 'url(assets/img/banner-bg.jpg)', backgroundPosition: '50% -27px' }}></div>
+                <div className="grey-fade-over"></div>
+                <div className="container z-bigger">
+                    <div className="row justify-content-center">
+                        <div className="col-md-11">
+                            <Title align="center">THE INSIGHTS OF DARKNESS</Title>
+                        </div>
+                        <div className="col-md-4 mt-[80px]">
+                            <div className="counter-wrap dark">
+                                <p><span className="counter-numb small-2">8.819</span></p>
+                                <h6>lines of code</h6>
                             </div>
-                            <div className="clear"></div>
-                            <div className="col-lg-4" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                                <div className="pricing p-xl-5 background-white text-center">
-                                    <h5>Starter</h5>
-                                    <div className="pricing-sub mb-4">billed annually or $12 month-to-month</div>
-                                    <div className="pricing-price mt-3"><sup>$</sup>10</div>
-                                    <div className="pricing-per mt-2">per month</div>
-                                    <div className="pricing-line mt-4"></div>		
-                                    <ul className="list-style mt-4">
-                                        <li><i className="fa fa-check"></i>Up to 7 pages</li>
-                                        <li><i className="fa fa-times grey"></i>Ecommerce</li>
-                                    </ul>
-                                    <button className="btn btn-primary mt-4" type="button">Order Now</button>	
-                                </div>
-                            </div>	
-                            <div className="col-lg-4 mt-4 mt-lg-0" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                                <div className="pricing popular p-xl-5 background-white text-center">
-                                    <div className="ribbon"><i className="funky-ui-icon icon-Ribbon-2"></i></div>
-                                    <h5>Personal</h5>
-                                    <div className="pricing-sub mb-4">billed annually or $20 month-to-month</div>
-                                    <div className="pricing-price mt-3"><sup>$</sup>16</div>
-                                    <div className="pricing-per mt-2">per month</div>
-                                    <div className="pricing-line mt-4"></div>		
-                                    <ul className="list-style mt-4">
-                                        <li><i className="fa fa-check"></i>Up to 20 pages</li>
-                                        <li><i className="fa fa-times grey"></i>Ecommerce</li>
-                                    </ul>
-                                    <button className="btn btn-primary mt-4" type="button">Order Now</button>	
-                                </div>
-                            </div>	
-                            <div className="col-lg-4 mt-4 mt-lg-0" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                                <div className="pricing p-xl-5 background-white text-center">
-                                    <h5>Ultimate</h5>
-                                    <div className="pricing-sub mb-4">billed annually or $29 month-to-month</div>
-                                    <div className="pricing-price mt-3"><sup>$</sup>24</div>
-                                    <div className="pricing-per mt-2">per month</div>
-                                    <div className="pricing-line mt-4"></div>		
-                                    <ul className="list-style mt-4">
-                                        <li><i className="fa fa-check"></i>Infinite pages</li>
-                                        <li><i className="fa fa-check"></i>Ecommerce</li>
-                                    </ul>
-                                    <button className="btn btn-primary mt-4" type="button">Order Now</button>	
-                                </div>
+                        </div>
+                        <div className="col-md-4 mt-[80px]">
+                            <div className="counter-wrap dark">
+                                <p><span className="counter-numb small-2">4.768</span></p>
+                                <h6>projects finished</h6>
                             </div>
-                        </div>	
-                    </div>		
+                        </div>
+                        <div className="col-md-4 mt-[80px]">
+                            <div className="counter-wrap dark">
+                                <p><span className="counter-numb small-2">7.307</span></p>
+                                <h6>coups of coffee</h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
             </div>
 
             <div className="section" id="support">
 
                 {/* <!-- Support Block
                 ================================================== --> */}
-                    
+
                 <div className="section padding-top background-white over-hide">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-4 hidden-sm-down" data-scroll-reveal="enter bottom move 80px over 1s after 0.2s">	
+                            <div className="col-md-4 hidden-sm-down" data-scroll-reveal="enter bottom move 80px over 1s after 0.2s">
                                 {/* <Image width={100} height={100} src="/img/woman.png" alt="" className="img-fluid" /> */}
                             </div>
-                            <div className="col-md-1">	
+                            <div className="col-md-1">
                             </div>
-                            <div className="col-md-7 mt-0 mt-lg-5 mb-5 mb-md-0">	
+                            <div className="col-md-7 mt-0 mt-lg-5 mb-5 mb-md-0">
                                 <div className="main-title text-left">
                                     <div className="main-subtitle-top mb-4">HELP & SUPPORT</div>
                                     <h4>24/7 Customer Care Team</h4>
-                                    <div className="main-subtitle-bottom smaller mt-3">Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.</div>	
+                                    <div className="main-subtitle-bottom smaller mt-3">Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.</div>
                                 </div>
                                 <a href="contact-clean.html" className="btn btn-primary btn-simple btn-round btn-long">contact us</a>
                             </div>
                         </div>
-                    </div>		
+                    </div>
                 </div>
 
                 {/* <!-- Logos Block
                 ================================================== --> */}
-                    
+
                 <div className="section padding-top-bottom-small background-dark over-hide">
                     <div className="container">
                         <div className="row">
@@ -508,9 +384,9 @@ export default function Home() {
                                 </a>
                             </div>
                         </div>
-                    </div>		
+                    </div>
                 </div>
-                
+
             </div>
 
             {/* <!-- Footer Dark Block
@@ -551,7 +427,7 @@ export default function Home() {
                         </div>
                         <div className="col-md-3 mt-4 mt-md-0 logo-footer-100">
                             {/* <Image width={100} height={100} src="/img/logo-light.png" alt="" className="mb-5" /> */}
-                            <div className="separator-wrap">	
+                            <div className="separator-wrap">
                                 <span className="separator"><span className="separator-line dashed"></span></span>
                             </div>
                             <ul className="list-style mt-3 mb-3">
@@ -559,12 +435,12 @@ export default function Home() {
                                 <li><i className="fa fa-phone"></i><a href="#">+41-34-9653-3246</a></li>
                                 <li><i className="fa fa-skype"></i><a href="#">FunkyOnSkype</a></li>
                             </ul>
-                            <div className="separator-wrap">	
+                            <div className="separator-wrap">
                                 <span className="separator"><span className="separator-line dashed"></span></span>
                             </div>
                         </div>
                     </div>
-                </div>	
+                </div>
                 <div className="container scd-foot padding-top-small padding-bottom-smaller">
                     <div className="row">
                         <div className="col-md-6">
@@ -587,7 +463,7 @@ export default function Home() {
                             </ul>
                         </div>
                     </div>
-                </div>	
+                </div>
             </div>
 
 
