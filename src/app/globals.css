@@ -30,6 +30,8 @@ html {
     --font-color-1: #ecd19a;
     --font-color-2: #71675b;
     --font-color-3: #ad835a;
+    --font-color-red: #E37171;
+    --font-color-green: #90CC54;
 
     --font-shadow-title-1: 0px 0px 6px #000000;
 
@@ -75,4 +77,16 @@ body {
     background: linear-gradient(to bottom,
             transparent,
             rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
+}
+
+.grey-fade-over {
+    z-index: 1 !important;
+}
+
+.font-red {
+    color: var(--font-color-red) !important;
+}
+
+.font-green {
+    color: var(--font-color-green) !important;
 }
