@@ -1,4 +1,4 @@
-.omni-player-point {
+.player-drawer-shorthand {
     position: relative;
     z-index: 3;
     padding: 15px 20px;
@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
 }
 
-.omni-player-content {
+.player-drawer {
     border: 1px solid var(--font-color-1);
     position: fixed;
     width: 230px;
@@ -25,6 +25,15 @@
     animation-name: Player;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
+}
+
+.player-drawer-name {
+    color: var(--font-color-1);
+    font-size: var(--font-size-4);
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px rgba(255, 122, 0, 0.5);
 }
 
 @keyframes Player {
@@ -47,8 +56,9 @@
 }
 
 .player-drawer-state {
+    padding: 25px;
     width: 180px;
-    height: 330px;
+    height: 325px;
     background-image: url('../../assets/img/player_card/table/bg2.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -68,10 +78,10 @@
     font-size: var(--font-size-5);
     position: relative;
     z-index: 100;
-    margin-bottom: -26px;
+    margin-bottom: -18px;
     text-align: center;
     width: 120px;
-    height: 35px;
+    height: 27px;
     background: url('../../assets/img/player_card/table/Card3.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -101,4 +111,21 @@
     color: var(--font-color-1);
     font-size: var(--font-size-4);
     /* font-family: var(--font-family-); */
+}
+
+.player-drawer-state li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: url('../../assets/img/player_card/table/Union.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.player-drawer-state li label, .player-drawer-state li span  {
+    color: var(--font-color-1);
+    font-size: var(--font-size-4);
+    line-height: 30px;
 }
