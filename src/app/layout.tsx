@@ -20,18 +20,12 @@ export default function RootLayout({
                 {/* FUNCKY THEME STYLE */}
                 <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
                 <link rel="stylesheet" href="assets/css/funky-style.css"/>
-                <link rel="stylesheet" href="assets/css/owl.carousel.css"/>
-                <link rel="stylesheet" href="assets/css/owl.transitions.css"/>
-                <link rel="stylesheet" href="assets/css/color-green.css"/>
             </head>
 
             <body className={inter.className}>
                 {children}
                 <PlayerDrawer/>
             </body>
-            
-            {/* FUNCKY THEME SCRIPT */}
-            <script type="text/javascript" src="assets/js/tether.min.js" async></script>
         </html>
     )
 }

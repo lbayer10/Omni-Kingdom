@@ -33,3 +33,9 @@ export const journeyList = [
     "/../../assets/img/carousel/gallery-7.jpg",
     "/../../assets/img/carousel/gallery-8.jpg",
 ]
+
+export const progressList = [
+    { label: 'HP', currentAmount: 3250, totalAmount: 17400, color: '#D46B6B' },
+    { label: 'MP', currentAmount: 537, totalAmount: 965, color: '#A6B9FF' },
+    { label: 'WP', currentAmount: 2731, totalAmount: 2840, color: '#FFD37E' },
+]

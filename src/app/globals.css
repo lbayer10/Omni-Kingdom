@@ -31,7 +31,9 @@ html {
     --font-color-2: #71675b;
     --font-color-3: #ad835a;
     --font-color-red: #E37171;
+    --font-color-blue: #7694FF;
     --font-color-green: #90CC54;
+    --font-color-yellow: #FFD37E;
 
     --font-shadow-title-1: 0px 0px 6px #000000;
 
@@ -89,4 +91,12 @@ body {
 
 .font-green {
     color: var(--font-color-green) !important;
+}
+
+.font-yellow {
+    color: var(--font-color-yellow) !important;
+}
+
+.font-blue {
+    color: var(--font-color-blue) !important;
 }

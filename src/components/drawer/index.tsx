@@ -2,9 +2,17 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
+import { Progress } from '../progress';
+import { progressList } from '@/@fake_db/home';
 import './style.css';
 
-export const PlayerDrawer = () => {
+interface PlayerDrawerProp {
+
+}
+
+export const PlayerDrawer = ({
+
+}: PlayerDrawerProp) => {
     const drawerRef = useRef<HTMLDivElement>(null);
     const [isShow, setIsShow] = useState(false);
 
@@ -48,7 +56,12 @@ export const PlayerDrawer = () => {
                     <div className='player-drawer-state-title mx-auto flex justify-center items-center'>State</div>
                     <div className='player-drawer-state mx-auto'>
                         <ul>
-                            <li>
+                            <div className='mt-2'>
+                                {
+                                    progressList.map(item => (<Progress color={item.color} label={item.label} currentAmount={item.currentAmount} totalAmount={item.totalAmount} />))
+                                }
+                            </div>
+                            <li className='mt-3'>
                                 <label>Str</label>
                                 <span className='player-value font-green'>137</span>
                             </li>
