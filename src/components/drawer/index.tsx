@@ -4,6 +4,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { Progress } from '../progress';
 import { progressList } from '@/@fake_db/home';
+import LeftOutlined  from '@ant-design/icons/LeftOutlined';
+import RightOutlined from '@ant-design/icons/RightOutlined';
+
 import './style.css';
 
 interface PlayerDrawerProp {
@@ -44,13 +47,26 @@ export const PlayerDrawer = ({
                 </div>
             </div>
             <div className='player-drawer' style={{display: isShow ? 'block' : 'none'}} ref={drawerRef}>
-                <div className='player-drawer-head mx-auto pt-3'>
-                    <Image className='mx-auto w-[90px] h-[90px]' src={require('../../assets/img/hero.png')} alt='hero' />
-                    <div className='text-center mt-[80px]'>Tyche</div>
+                <div className='player-drawer-head mx-auto pt-3 flex justify-between'>
+                    <div>
+                        <LeftOutlined />
+                    </div>
+                    <div>
+                        <Image className='mx-auto w-[90px] h-[90px]' src={require('../../assets/img/hero.png')} alt='hero' />
+                        <div className='text-center mt-[80px]'>Tyche</div>
+                    </div>
+                    <div>
+                        <RightOutlined />
+                    </div>
                 </div>
-                <div className='flex mb-3 mx-4'>
-                    <div className='player-drawer-level flex items-center justify-center'>Level</div>
-                    <div className='player-drawer-level-content flex items-center justify-center'><span>24</span></div>
+                <div className='mb-4 mx-4'>
+                    <div className='flex'>
+                        <div className='player-drawer-level flex items-center justify-center'>Level</div>
+                        <div className='player-drawer-level-content flex items-center justify-center'><span>24</span></div>
+                    </div>
+                    <div className='mt-2 mx-1'>
+                        <Progress color='#FFD37E' label='' currentAmount={70} totalAmount={100} hidden />
+                    </div>
                 </div>
                 <div>
                     <div className='player-drawer-state-title mx-auto flex justify-center items-center'>State</div>
@@ -61,7 +77,7 @@ export const PlayerDrawer = ({
                                     progressList.map(item => (<Progress color={item.color} label={item.label} currentAmount={item.currentAmount} totalAmount={item.totalAmount} />))
                                 }
                             </div>
-                            <li className='mt-3'>
+                            <li className='mt-4'>
                                 <label>Str</label>
                                 <span className='player-value font-green'>137</span>
                             </li>
