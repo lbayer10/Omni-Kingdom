@@ -58,19 +58,29 @@
 .player-drawer-state {
     padding: 25px;
     width: 180px;
-    height: 325px;
+    height: 310px;
     background-image: url('../../assets/img/player_card/table/bg2.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 .player-drawer-head {
     margin-top: -39px;
-    width: 150px;
+    width: 200px;
     height: 281px;
     background: url('../../assets/img/player_card/table/Card2.png');
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.player-drawer-head svg {
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.player-drawer-head svg:hover {
+    filter: drop-shadow(var(--font-shadow-title-1));
 }
 
 .player-drawer-state-title {
@@ -114,6 +124,7 @@
 }
 
 .player-drawer-state li {
+    padding-bottom: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -127,5 +138,6 @@
 .player-drawer-state li label, .player-drawer-state li span  {
     color: var(--font-color-1);
     font-size: var(--font-size-4);
-    line-height: 30px;
+    line-height: 20px;
+    margin-bottom: 0;
 }
