@@ -4,11 +4,11 @@ import { Divider } from "@/components/divider";
 import { Typography } from "@/components/typography";
 import { Carousel } from "@/components/carousel";
 
-import { heroCard, weaponCard, journeyList } from "@/@fake_db/home";
+import { heroCard, weaponCard, authorCard, journeyList } from "@/@fake_db/home";
 import "./style.css";
 
 const { Title, Paragraph } = Typography();
-const { HeroCard, WeaponCard } = Card();
+const { HeroCard, WeaponCard, AuthorCard } = Card();
 
 export default function Home() {
     return (
@@ -294,101 +294,44 @@ export default function Home() {
 
             <div className="section padding-top-bottom">
                 <div className="parallax-1"
-                    style={{ backgroundImage: 'url(assets/img/banner-bg2.jpg)', backgroundPosition: '50% -27px' }}></div>
-                <div className="grey-fade-over"></div>
+                    style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.25)), url(assets/img/banner-bg2.jpg)', backgroundPosition: '50% -27px' }}></div>
                 <div className="container z-bigger">
+                    <Title align="center">THE INSIGHTS OF DARKNESS</Title>
                     <div className="row justify-content-center">
                         <div className="col-md-11">
-                            <Title align="center">THE INSIGHTS OF DARKNESS</Title>
                         </div>
-                        <div className="col-md-4 mt-[80px]">
-                            <div className="counter-wrap dark">
-                                <p><span className="counter-numb small-2">8.819</span></p>
-                                <h6>lines of code</h6>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mt-[80px]">
-                            <div className="counter-wrap dark">
-                                <p><span className="counter-numb small-2">4.768</span></p>
-                                <h6>projects finished</h6>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mt-[80px]">
-                            <div className="counter-wrap dark">
-                                <p><span className="counter-numb small-2">7.307</span></p>
-                                <h6>coups of coffee</h6>
-                            </div>
-                        </div>
+                        {
+                            authorCard.map((item, index) => (
+                                <div key={index} className="px-4 col-md-4 mt-[80px]">
+                                    <AuthorCard className="" content={item} />
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
             </div>
+            <Divider />
 
-            <div className="section" id="support">
+            <div className="section home-overview" id="support">
 
                 {/* <!-- Support Block
                 ================================================== --> */}
 
-                <div className="section padding-top background-white over-hide">
+                <div className="section padding-top-bottom-smaller" id="scroll-top">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-4 hidden-sm-down" data-scroll-reveal="enter bottom move 80px over 1s after 0.2s">
-                                {/* <Image width={100} height={100} src="/img/woman.png" alt="" className="img-fluid" /> */}
-                            </div>
-                            <div className="col-md-1">
-                            </div>
-                            <div className="col-md-7 mt-0 mt-lg-5 mb-5 mb-md-0">
-                                <div className="main-title text-left">
-                                    <div className="main-subtitle-top mb-4">HELP & SUPPORT</div>
-                                    <h4>24/7 Customer Care Team</h4>
-                                    <div className="main-subtitle-bottom smaller mt-3">Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.</div>
+                            <div className="col-md-12">
+                                <div className="call-box-3 text-center text-md-center pb-5">
+                                    <Title className="mt-[70px] pb-4" align="center">Summon Us</Title>
+                                    <Paragraph className="w-[90%] m-auto" align="center">Whether your mind echoes with questions, or your soul seeks for answers untold, stay awhile and write us down your request. If a bug is what bothers you, it shall be purged into eternity via your precious feedback. If a career in warmonging is what you long for, indulge us with a first handshake and be welcome to visit us in our den, located right in the midst of the ancient city of Athens. By all means, if you wish to present us with a review only a true Master gamer would, enlighten us so we may bask in its light.<br /><br />   By all means, contact us. We are always listening...</Paragraph>
                                 </div>
-                                <a href="contact-clean.html" className="btn btn-primary btn-simple btn-round btn-long">contact us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* <!-- Logos Block
-                ================================================== --> */}
-
-                <div className="section padding-top-bottom-small background-dark over-hide">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-2">
-                                <a href="#">
-                                    {/* <Image width={100} height={100}  src="/img/logos/white1.png" className="img-120 mx-auto" alt="" /> */}
-                                </a>
-                            </div>
-                            <div className="col-md-2 mt-4 mt-md-0">
-                                <a href="#">
-                                    {/* <Image width={100} height={100}  src="/img/logos/white2.png" className="img-120 mx-auto" alt="" /> */}
-                                </a>
-                            </div>
-                            <div className="col-md-2 mt-4 mt-md-0">
-                                <a href="#">
-                                    {/* <Image width={100} height={100}  src="/img/logos/white8.png" className="img-120 mx-auto" alt="" /> */}
-                                </a>
-                            </div>
-                            <div className="col-md-2 mt-4 mt-md-0">
-                                <a href="#">
-                                    {/* <Image width={100} height={100}  src="/img/logos/white10.png" className="img-120 mx-auto" alt="" /> */}
-                                </a>
-                            </div>
-                            <div className="col-md-2 mt-4 mt-md-0">
-                                <a href="#">
-                                    {/* <Image width={100} height={100}  src="/img/logos/white5.png" className="img-120 mx-auto" alt="" /> */}
-                                </a>
-                            </div>
-                            <div className="col-md-2 mt-4 mt-md-0">
-                                <a href="#">
-                                    {/* <Image width={100} height={100}  src="/img/logos/white6.png" className="img-120 mx-auto" alt="" /> */}
-                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
             </div>
+            <Divider />
 
             {/* <!-- Footer Dark Block
             ================================================== --> */}
@@ -432,9 +375,9 @@ export default function Home() {
                                 <span className="separator"><span className="separator-line dashed"></span></span>
                             </div>
                             <ul className="list-style mt-3 mb-3">
-                                <li><i className="fa fa-envelope-o"></i><a href="#">info@funky.com</a></li>
+                                <li><i className="fa fa-envelope-o"></i><a href="#">support@omnikingdom.com</a></li>
                                 <li><i className="fa fa-phone"></i><a href="#">+41-34-9653-3246</a></li>
-                                <li><i className="fa fa-skype"></i><a href="#">FunkyOnSkype</a></li>
+                                <li><i className="fa fa-skype"></i><a href="#">OmniKingdom</a></li>
                             </ul>
                             <div className="separator-wrap">
                                 <span className="separator"><span className="separator-line dashed"></span></span>
@@ -445,7 +388,7 @@ export default function Home() {
                 <div className="container scd-foot padding-top-small padding-bottom-smaller">
                     <div className="row">
                         <div className="col-md-6">
-                            <p>© 2018 Funky. Powerd with <i className="fa fa-heart"></i> by <a href="https://themeforest.net/user/ig_design/portfolio?ref=IG_design" target="_blank">IG Design</a>!</p>
+                            <p>© 2023 OmniKingdom. Powerd with by KAL</p>
                         </div>
                         <div className="col-md-6">
                             <ul className="footer-social">

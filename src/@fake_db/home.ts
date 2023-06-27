@@ -41,6 +41,24 @@ export const weaponCard = [
     },
 ]
 
+export const authorCard = [
+    {
+        src: `/assets/img/author/1.png`,
+        name: 'Kkoshiya, Founder',
+        description: 'When people comment on OmniKingdom\'s difficulty, I always reply \'The armor of a true knight, is not shiny - only battle worn\'.'
+    },
+    {
+        src: `/assets/img/author/2.jpg`,
+        name: 'Alex, Lead Developer',
+        description: 'There is nothing - literally - nothing more satisfying for a VFX artist to see his work giving life to a luscious 3D environment.'
+    },
+    {
+        src: `/assets/img/author/3.png`,
+        name: 'Lenny, Frontend Developer',
+        description: 'People ask me why I work such long hours and I find myself quoting the same thing - I simply adore making games.'
+    },
+]
+
 export const journeyList = [
     "/../../assets/img/carousel/gallery-1.jpg",
     "/../../assets/img/carousel/gallery-2.jpg",
