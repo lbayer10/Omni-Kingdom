@@ -1,9 +1,22 @@
+.hero-card {
+    cursor: pointer;
+}
+
 .herocard {
     width: 100%;
-    border: 1px solid;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     opacity: 0.5;
     transition: all 0.5s;
     box-shadow: 0px 0px 25px 0px #000000;
+}
+
+.hero-card:hover .herocard {
+    border: 1px solid #9d9280;
+    opacity: 1;
+}
+
+.hero-card:hover .herocard-text {
+    color: #9d9280;
 }
 
 .herocard-name {
@@ -15,4 +28,61 @@
 .herocard-text {
     color: var(--font-color-2);
     font-size: var(--font-size-5);
+    transition: all 0.5s;
+}
+
+.weapon-card {
+    background-color: #3f2f29;
+    padding: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.weapon-card:hover {
+    background-color: #752b1a;
+    box-shadow: 0 0 60px rgba(97, 51, 40, 0.9);
+}
+
+.weapon-card:hover .weapon-card-item {
+    border-right: 1px solid #752b1a;
+    border-left: 1px solid #752b1a;
+}
+
+.weapon-card:hover .weaponcard-name {
+    color: #f3e6d0;
+}
+
+.weapon-card:hover .weaponcard-text {
+    color: #be9d7c;
+}
+
+.weapon-card img {
+    width: 100%;
+}
+
+.weapon-card-item {
+    background: rgba(24, 10, 7, 0.7);
+    bottom: 0;
+    left: 0;
+    min-height: 54px;
+    padding: 16px 28px;
+    position: absolute;
+    margin: auto 15px;
+    right: 0;
+    text-align: left;
+    border-right: 1px solid #3f2f29;
+    border-left: 1px solid #3f2f29;
+    transition: border 0.2s;
+}
+
+.weaponcard-name {
+    color: var(--font-color-1);
+    font-size: var(--font-size-3);
+    font-family: var(--font-family-title);
+}
+
+.weaponcard-text {
+    color: var(--font-color-3);
+    font-size: var(--font-size-6);
+    transition: all 0.5s;
 }

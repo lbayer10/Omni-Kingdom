@@ -4,11 +4,11 @@ import { Divider } from "@/components/divider";
 import { Typography } from "@/components/typography";
 import { Carousel } from "@/components/carousel";
 
-import { heroCard, journeyList } from "@/@fake_db/home";
+import { heroCard, weaponCard, journeyList } from "@/@fake_db/home";
 import "./style.css";
 
 const { Title, Paragraph } = Typography();
-const { HeroCard } = Card();
+const { HeroCard, WeaponCard } = Card();
 
 export default function Home() {
     return (
@@ -274,13 +274,13 @@ export default function Home() {
                     {/* <!-- Services Block
                     ================================================== --> */}
 
-                    <div className="section py-[80px] over-hide">
+                    <div className="section pt-[50px] pb-[70px] over-hide">
                         <div className="container">
-                            <div className="row">
+                            <div className="row gap-10 flex justify-center">
                                 {
-                                    heroCard.map((item, index) => (
+                                    weaponCard.map((item, index) => (
                                         <div key={index} className="col-xs-12 col-md-6 col-lg-3" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
-                                            <HeroCard className="" content={item} />
+                                            <WeaponCard className="" content={item} />
                                         </div>
                                     ))
                                 }
@@ -289,11 +289,12 @@ export default function Home() {
                     </div>
                 </div>
 
+                <Divider />
             </div>
 
             <div className="section padding-top-bottom">
                 <div className="parallax-1"
-                    style={{ backgroundImage: 'url(assets/img/banner-bg.jpg)', backgroundPosition: '50% -27px' }}></div>
+                    style={{ backgroundImage: 'url(assets/img/banner-bg2.jpg)', backgroundPosition: '50% -27px' }}></div>
                 <div className="grey-fade-over"></div>
                 <div className="container z-bigger">
                     <div className="row justify-content-center">

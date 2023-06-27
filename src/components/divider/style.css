@@ -1,6 +1,6 @@
 .divider {
-    z-index: 1;
-    margin: -18px -15px;
+    z-index: 3;
+    margin: -18px 0px;
 }
 
 .divider-rule {
