@@ -23,6 +23,24 @@ export const heroCard = [
     },
 ]
 
+export const weaponCard = [
+    {
+        src: `/assets/img/weapon/dragonic-gameplay-01.jpg`,
+        name: 'Commander',
+        description: 'Available both for Apple iPhone & Apple iPad, specially designed for Apple iPad Pro & Force Touch.'
+    },
+    {
+        src: `/assets/img/weapon/dragonic-gameplay-02.jpg`,
+        name: 'Devil',
+        description: 'Incorporating the finest tweaks for absolutely best performance and stellar graphics in all device.'
+    },
+    {
+        src: `/assets/img/weapon/dragonic-gameplay-03.jpg`,
+        name: 'Dragon',
+        description: 'The zenith of graphics, the PC & Mac versions offer a truly unforgetable experience.'
+    },
+]
+
 export const journeyList = [
     "/../../assets/img/carousel/gallery-1.jpg",
     "/../../assets/img/carousel/gallery-2.jpg",

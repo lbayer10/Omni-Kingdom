@@ -1,0 +1,7 @@
+.button {
+    background-image: url('../../assets/img/button/button-sprite.png'), url('../../assets/img/button/button-sprite.png'), url('../../assets/img/button/button-sprite.png');
+    background-position: 0 -108px, 0 0, 0 -162px;
+    background-repeat: no-repeat, repeat-x, no-repeat;
+    height: 54px;
+    z-index: 1;
+}

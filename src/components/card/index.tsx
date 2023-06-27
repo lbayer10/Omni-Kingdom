@@ -15,14 +15,13 @@ interface HeroCardProps {
 }
 
 interface WeaponCardProps {
-    align?: 'left' | 'center' | 'right';
-    className: string,
-    children: React.ReactNode;
+    content: HeroType;
+    className: string;
 }
 
 const HeroCard: FC<HeroCardProps> = memo(({ content, className }: HeroCardProps) => {
     return (
-        <div className="border-on-light text-center">
+        <div className="hero-card border-on-light text-center">
             <Image className={['herocard', className].join(' ')} src={content?.src} width='300' height='300' alt='hero-card' />
             <h5 className="mt-5 herocard-name">{content?.name}</h5>	
             <div className="mt-4 mb-4 text-left herocard-text">{content?.description}</div>	
@@ -30,10 +29,18 @@ const HeroCard: FC<HeroCardProps> = memo(({ content, className }: HeroCardProps)
     )
 });
 
-// const WeaponCard: FC<WeaponCardProps> = memo(({ className, children }: WeaponCardProps) => {
-    // return <p className={[className, `typography-text-${level}`, `text-${align}`].join(' ')}>{children}</p>
-// });
+const WeaponCard: FC<WeaponCardProps> = memo(({ content, className }: WeaponCardProps) => {
+    return (
+        <div className="weapon-card border-on-light text-center">
+            <Image className={['weaponcard', className].join(' ')} src={content?.src} width='300' height='300' alt='hero-card' />
+            <div className="weapon-card-item">
+                <h3 className="weaponcard-name">{content?.name}</h3>	
+                <div className="mt-2 text-left weaponcard-text">{content?.description}</div>	
+            </div>
+        </div>
+    )
+});
 
 export const Card = () => {
-    return { HeroCard }
+    return { HeroCard, WeaponCard }
 }
