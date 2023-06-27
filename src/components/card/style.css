@@ -86,3 +86,45 @@
     font-size: var(--font-size-6);
     transition: all 0.5s;
 }
+
+.authorcard {
+    background: #111214;
+    box-shadow: 0px 0px 25px 0px #000000;
+    margin: 15px 15px 0 0;
+    border: 1px solid #752b1a;
+    height: auto;
+    width: 50%;
+    display: inline-block;
+}
+
+.authorcard-text {
+    font-size: 20px;
+    font-family:  "Cinzel Decorative", "Palatino Light", Times, Times New Roman, Georgia, serif;
+    color: #fffcd9;
+}
+
+.authorcard-text:before {
+    content: '\201c';
+    font-weight: 100;
+    position: absolute;
+    font-size: 250%;
+    transform: translate(-150%, -10%);
+}
+
+.authorcard-text:after {
+    content: '\201d';
+    font-weight: 100;
+    position: absolute;
+    font-size: 250%;
+    transform: translate(50%, -10%);
+}
+
+.authorcard-name {
+    color: #ecd19a;
+    font-size: 18px;
+    height: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
