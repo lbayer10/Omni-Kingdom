@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { Card } from "@/components/card";
 import { Divider } from "@/components/divider";
-import { Typography } from "@/components/typography";
 import { Carousel } from "@/components/carousel";
+import { Typography } from "@/components/typography";
+import { Header } from "@/components/layout/header";
 
 import { heroCard, weaponCard, authorCard, journeyList } from "@/@fake_db/home";
 import "./style.css";
@@ -17,92 +18,7 @@ export default function Home() {
             {/* <!-- Nav and Logo
             ================================================== --> */}
 
-            <div id="menu-wrap" className="cbp-af-header black-menu-background-1st-trans menu-fixed-padding-small menu-shadow">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <nav className="navbar navbar-toggleable-md navbar-inverse bg-inverse bg-faded">
-                                <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavMenuMain" aria-controls="navbarNavMenuMain" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span className="navbar-toggler-icon"></span>
-                                </button>
-                                <a className="navbar-brand" href="index.html">
-                                    {/* <Image width={100} height={100} src="/img/logo-light.png" alt="" className="" /> */}
-                                </a>
-                                <div className="collapse navbar-collapse justify-content-end" id="navbarNavMenuMain">
-                                    <ul className="navbar-nav">
-                                        <li className="nav-item">
-                                            <a href="#home" className="nav-link">Home</a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a href="#about" className="nav-link">About</a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a href="#testimonials" className="nav-link">Testimonials</a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a href="#services" className="nav-link">Services</a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a href="#pricing" className="nav-link">Pricing</a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a href="#support" className="nav-link">Support</a>
-                                        </li>
-                                        <li className="nav-item dropdown">
-                                            <a className="nav-link colored-prim" href="#" id="navbarDropdownMenuLink-lng" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                USA
-                                            </a>
-                                            <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-lng">
-                                                <a className="dropdown-item" href="#">Serbian</a>
-                                                <a className="dropdown-item" href="#">French</a>
-                                                <a className="dropdown-item" href="#">Spanish</a>
-                                            </div>
-                                        </li>
-                                        <li className="nav-item icons-item-menu">
-                                            <a className="nav-link ml-4" href="#"><i className="fa fa-heart"></i></a>
-                                        </li>
-                                        <li className="nav-item dropdown icons-item-menu">
-                                            <a className="nav-link" href="#" id="navbarDropdownMenuLink-shop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i className="fa fa-shopping-bag"></i>
-                                            </a>
-                                            <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink-shop">
-                                                <div className="drop-shop-block">
-                                                    <span className="close"></span>
-                                                    {/* <Image width={100} height={100} src="/img/shop1.jpg" alt="" className="rounded" /> */}
-                                                    <h6>Shop item one</h6>
-                                                    <div className="clearfix"></div>
-                                                    <p>2 x $47.00</p>
-                                                    <div className="clearfix"></div>
-                                                    <div className="dropdown-divider"></div>
-                                                </div>
-                                                <div className="drop-shop-block">
-                                                    <span className="close"></span>
-                                                    {/* <Image width={100} height={100} src="/img/shop2.jpg" alt="" className="rounded" /> */}
-                                                    <h6>Shop item two</h6>
-                                                    <div className="clearfix"></div>
-                                                    <p>1 x $72.00</p>
-                                                    <div className="clearfix"></div>
-                                                    <div className="dropdown-divider"></div>
-                                                </div>
-                                                <div className="clearfix"></div>
-                                                <p><span>Subtotal:</span> <strong>$166.00</strong></p>
-                                                <div className="clearfix"></div>
-                                                <div className="dropdown-divider"></div>
-                                                <button className="btn btn-default btn-sm float-left">view cart</button>
-                                                <button className="btn btn-primary btn-sm float-right">checkout</button>
-                                                <div className="clearfix"></div>
-                                            </div>
-                                        </li>
-                                        <li className="nav-item icons-item-menu modal-search">
-                                            <a className="nav-link" href="#" data-toggle="modal" data-target="#Modal-search"><i className="fa fa-search"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Header />
 
 
             {/* <!-- Search --> */}
