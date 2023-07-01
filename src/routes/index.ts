@@ -1,7 +1,7 @@
 export const _ROUTERS = [
     {
         name: 'Home',
-        path: '/home'
+        path: '/'
     },
     {
         name: 'Heroes',

@@ -1,9 +1,7 @@
-import Image from "next/image";
 import { Card } from "@/components/card";
 import { Divider } from "@/components/divider";
 import { Carousel } from "@/components/carousel";
 import { Typography } from "@/components/typography";
-import { Header } from "@/components/layout/header";
 
 import { heroCard, weaponCard, authorCard, journeyList } from "@/@fake_db/home";
 import "./style.css";
@@ -14,46 +12,6 @@ const { HeroCard, WeaponCard, AuthorCard } = Card();
 export default function Home() {
     return (
         <main>
-
-            {/* <!-- Nav and Logo
-            ================================================== --> */}
-
-            <Header />
-
-
-            {/* <!-- Search --> */}
-            <div className="modal fade default search-modal" id="Modal-search" tabIndex={-1} role="dialog" aria-hidden="true">
-                <div className="modal-dialog" role="document">
-                    <div className="modal-content">
-                        <div className="modal-header justify-content-end">
-                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"></span>
-                            </button>
-                        </div>
-                        <div className="modal-body">
-                            <div className="hero-center-wrap move-top">
-                                <div className="container">
-                                    <div className="row justify-content-center">
-                                        <div className="col-md-6">
-                                            {/* <input type="search" value="" placeholder="Search" className="form-control" />
-                                            <button className="btn btn-primary btn-icon btn-round" type="submit" value="search">
-                                                <i className="fa fa-search"></i>
-                                            </button> */}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
             {/* <!-- Primary Page Layout
             ================================================== --> */}
 
