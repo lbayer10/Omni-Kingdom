@@ -1,6 +1,7 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
-import { PlayerDrawer } from '@/components/drawer';
+import { PlayerCard } from '@/containers/player';
+import { Header } from "@/components/layout/header";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,8 +24,10 @@ export default function RootLayout({
             </head>
 
             <body className={inter.className}>
+                <Header />
+
                 {children}
-                <PlayerDrawer/>
+                <PlayerCard />
             </body>
         </html>
     )
