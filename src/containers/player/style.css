@@ -37,6 +37,10 @@
     text-shadow: 0px 0px 10px rgba(255, 122, 0, 0.5);
 }
 
+.player-hero-drawer-image {
+    height: 90px !important;
+}
+
 @keyframes Player {
     from { left: -250px; }
     to { left: 10px; }    
@@ -144,4 +148,11 @@
     font-family: 'El Messiri';
     line-height: 20px;
     margin-bottom: 0;
+}
+
+/* Player Hand */
+
+.player-image {
+    height: 70px !important;
+    object-fit: cover;
 }
