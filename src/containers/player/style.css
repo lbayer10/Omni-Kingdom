@@ -29,6 +29,8 @@
 }
 
 .player-drawer-name {
+    margin-top: 50px;
+    cursor: pointer;
     color: var(--font-color-1);
     font-size: var(--font-size-4);
     font-family: 'El Messiri';
@@ -39,6 +41,7 @@
 
 .player-hero-drawer-image {
     height: 90px !important;
+    border-radius: 90px;
 }
 
 @keyframes Player {
@@ -77,6 +80,11 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+
+    font-weight: 600;
+    text-shadow: 0px 0px 10px rgba(255, 122, 0, 0.5);
+    font-size: 20px;
+    font-family: 'El Messiri';
 }
 
 .player-drawer-head svg {
@@ -154,5 +162,6 @@
 
 .player-image {
     height: 70px !important;
+    border-radius: 70px;
     object-fit: cover;
 }

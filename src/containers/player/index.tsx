@@ -50,7 +50,6 @@ export const PlayerCard = ({
                         <Progress color='#FFD37E' label='' currentAmount={70} totalAmount={100} hidden />
                     </div>
                 </div>
-
                 <PlayerStates />
             </div>
         </div>
