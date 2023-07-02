@@ -1,0 +1,48 @@
+/* Inventory Box Style */
+
+.inventorybox-container {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 329px;
+    height: 515px;
+    border: 2px solid #31323C;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.inventorybox-panel {
+    width: 100%;
+    min-height: 100%;
+    background: url('../../assets/img/lattice.png'), #0C0C0E;
+    background-repeat: repeat-y;
+    background-size: contain;
+
+    display: flex;
+}
+
+.inventorybox-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.inventorybox-container::-webkit-scrollbar-track {
+    width: 3px;
+}
+
+.inventorybox-container::-webkit-scrollbar-thumb {
+    border-image: linear-gradient(#7A7369, #EAC48B, #7A6969) 2;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.inventorycard-container {
+    width: 47px;
+    height: 47px;
+    padding: 2px;
+}
+
+.inventory-counter {
+    color: #7A7369;
+    font-family: 'El Messiri';
+    font-weight: 600;
+}

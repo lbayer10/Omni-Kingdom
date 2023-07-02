@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { PlayerStates } from "@/containers/player/PlayerStates";
 import { PlayerFlag } from '@/containers/player/PlayerFlag';
+import { InventoryContainer } from "@/containers/inventory";
 import { progressList } from '@/@fake_db/home';
 
 import "./style.css";
@@ -63,10 +64,7 @@ export default () => {
                         <div className="col-lg-4">
                             <div className="crafts-item-panel">
                                 <div className="crafts-item-title text-center">Inventory</div>
-                                <div className="crafts-item-content">
-                                    
-                                </div>
-                                <div>slots: <span>0/200</span></div>
+                                <InventoryContainer />
                             </div>
                         </div>
                     </div>
