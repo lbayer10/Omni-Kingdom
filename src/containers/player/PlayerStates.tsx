@@ -4,9 +4,15 @@ import { progressList, statesList } from '@/@fake_db/home';
 
 import "./style.css";
 
-export const PlayerStates = () => {
+interface PlayerStatesProp {
+    className?: string
+}
+
+export const PlayerStates = ({
+    className
+}: PlayerStatesProp) => {
     return (
-        <div>
+        <div className={className}>
             <div className='player-drawer-state-title mx-auto flex justify-center items-center'>State</div>
             <div className='player-drawer-state mx-auto'>
                 <ul>

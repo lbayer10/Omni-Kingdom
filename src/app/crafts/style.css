@@ -45,7 +45,7 @@
     height: 40px;
     position: relative;
     z-index: 1;
-    margin-bottom: -15px;
+    margin-top: -25px;
     margin-left: auto;
     margin-right: auto;
     background: url('../../assets/img/player_card/table/item-panel.png');
@@ -84,13 +84,12 @@
 .crafts-model {
     width: 250px;
     height: 450px;
-    object-fit: contain;
+    object-fit: cover;
 
 }
 
 .crafts-ability {
     margin: auto;
-    max-width: 160px;
 }
 
 .crafts-ability li {
