@@ -75,3 +75,10 @@ export const progressList = [
     { label: 'MP', currentAmount: 537, totalAmount: 965, color: '#A6B9FF' },
     { label: 'WP', currentAmount: 2731, totalAmount: 2840, color: '#FFD37E' },
 ]
+
+export const statesList = [
+    { label: 'Str', value: 137 },
+    { label: 'Int', value: 210 },
+    { label: 'Dex', value: 14 },
+    { label: 'Con', value: 150 },
+]

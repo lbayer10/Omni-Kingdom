@@ -40,7 +40,7 @@ export const PlayerCard = ({
     return (
         <div>
             <div className='player-drawer-shorthand'>
-                <Image className='w-20 h-[70px]' src={require('../../assets/img/hero.png')} alt='hero' />
+                <Image className='player-hero-image' width={75} height={70} src={require('../../assets/img/hero.png')} alt='hero' />
                 <div className='flex justify-center'>
                     <input className='hidden' type="checkbox" id="player-drawer-name" name="player-drawer-name" checked={isShow} onChange={e => setIsShow(e.target.checked)}/>
                     <label htmlFor="player-drawer-name" className='mt-[50px] text-center cursor-pointer player-drawer-name'>Lion</label>
@@ -52,7 +52,7 @@ export const PlayerCard = ({
                         <LeftOutlined />
                     </div>
                     <div>
-                        <Image className='mx-auto w-[90px] h-[90px]' src={require('../../assets/img/hero.png')} alt='hero' />
+                        <Image width={90} height={90} className='player-hero-drawer-image mx-auto' src={require('../../assets/img/hero.png')} alt='hero' />
                         <div className='text-center mt-[80px]'>Tyche</div>
                     </div>
                     <div>

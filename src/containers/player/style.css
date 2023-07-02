@@ -28,13 +28,23 @@
     animation-timing-function: ease-in-out;
 }
 
+.player-hero-image {
+    height: 75px !important;
+}
+
 .player-drawer-name {
+    cursor: pointer;
+    margin-top: 45px;
     color: var(--font-color-1);
     font-size: var(--font-size-4);
     font-family: 'El Messiri';
     font-style: normal;
     font-weight: 700;
     text-shadow: 0px 0px 10px rgba(255, 122, 0, 0.5);
+}
+
+.player-hero-drawer-image {
+    height: 90px !important;
 }
 
 @keyframes Player {
