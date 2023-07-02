@@ -12,7 +12,7 @@ interface PlayerDrawerProp {
 
 }
 
-export const PlayerCard = ({
+export const PlayerContainer = ({
 
 }: PlayerDrawerProp) => {
     const drawerRef = useRef<HTMLDivElement>(null);

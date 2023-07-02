@@ -1,6 +1,6 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
-import { PlayerCard } from '@/containers/player';
+import { PlayerContainer } from '@/containers/player';
 import { Header } from "@/components/layout/header";
 
 const inter = Inter({ subsets: ['latin'] })
@@ -27,7 +27,7 @@ export default function RootLayout({
                 <Header />
 
                 {children}
-                <PlayerCard />
+                <PlayerContainer />
             </body>
         </html>
     )

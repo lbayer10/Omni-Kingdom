@@ -16,6 +16,7 @@
 }
 
 .crafts-item-panel {
+    padding: 0 20px;
     opacity: 1;
     width: 100%;
     height: 650px;
@@ -61,7 +62,9 @@
     height: 75%;
     border: 2px solid #31323C;
     border-radius: 5px;
-    background: #0C0C0E;
+    background: url('../../assets/img/lattice.png'), #0C0C0E;
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 .crafts-hero-title, .crafts-item-title {
