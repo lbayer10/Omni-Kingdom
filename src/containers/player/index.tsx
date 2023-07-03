@@ -5,6 +5,7 @@ import { Progress } from '@/components/progress';
 import { PlayerHand } from '@/containers/player/PlayerHand';
 import { PlayerFlag } from '@/containers/player/PlayerFlag';
 import { PlayerStates } from '@/containers/player/PlayerStates';
+import { Button } from '@/components/button';
 
 import './style.css';
 
