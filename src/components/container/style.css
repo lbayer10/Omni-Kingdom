@@ -40,7 +40,8 @@
 }
 
 .content-list {
-
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .content-list::-webkit-scrollbar {

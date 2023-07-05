@@ -17,7 +17,7 @@
     border: 1px solid var(--font-color-1);
     position: fixed;
     width: 230px;
-    height: 680px;
+    height: 650px;
     top: 100px;
     left: 10px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)), url('../../assets/img/dark_wall.png');
@@ -97,6 +97,8 @@
 }
 
 .player-drawer-state-title {
+    display: flex;
+    align-items: center;
     color: var(--font-color-1);
     font-size: var(--font-size-5);
     font-weight: 600;
@@ -113,6 +115,8 @@
 }
 
 .player-drawer-level {
+    display: flex;
+    align-items: center;
     margin-right: -5px;
     color: var(--font-color-1);
     font-size: var(--font-size-5);
@@ -123,6 +127,8 @@
 }
 
 .player-drawer-level-content {
+    display: flex;
+    align-items: center;
     color: var(--font-color-1);
     font-size: var(--font-size-5);
     width: 50%;

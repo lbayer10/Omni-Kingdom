@@ -1,0 +1,68 @@
+.heroes-cards-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    place-items: center;
+    row-gap: 15px;
+}
+
+.herocard-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 15px;
+    cursor: pointer;
+
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+
+.herocard-name {
+    padding: 15px 10px;
+    color: var(--font-color-1);
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    font-family: var(--font-family-ElMessiri);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .heroes-cards-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        row-gap: 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    .heroes-cards-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        place-items: center;
+        row-gap: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .heroes-cards-container {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        place-items: center;
+        row-gap: 15px;
+    }
+}
+
+@media (min-width: 1240px) {
+    .heroes-cards-container {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        place-items: center;
+        row-gap: 15px;
+    }
+}

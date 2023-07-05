@@ -15,7 +15,7 @@ export const Container = ({
     className
 }: ContainerProp) => {
     return (
-        <div>
+        <div className="container">
             {
                 title &&
                 <div className="content-head">
@@ -25,7 +25,7 @@ export const Container = ({
             <div className={["content-container", className].join(" ")}>
                 <div className="content-body flex flex-col justify-between">
                     <div>hello world</div>
-                    <div className="content-list h-[600px] overflow-auto">
+                    <div className="content-list h-[600px]">
                         {children}
                     </div>
                 </div>
