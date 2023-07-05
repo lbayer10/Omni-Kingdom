@@ -12,7 +12,7 @@
     background: url('../../assets/img/button/button-sprite.png') no-repeat 0 -108px, url('../../assets/img/button/button-sprite.png') no-repeat 0 -162px, url('../../assets/img/button/button-sprite.png') repeat-x 0 0;
     /* background-size: 50px 100%, 10rem 100%, 60% 100%; */
     background-size: 26%, 26%, 26%;
-}   
+}
 
 .button-default {
     

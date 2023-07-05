@@ -13,7 +13,7 @@ export default () => {
             <div className="section h-screen over-hide">
                 <div className="parallax" style={{ backgroundImage: 'url(assets/img/crafts-bg.jpg)', backgroundPosition: '50% -50px', filter: 'grayscale(.5)' }}></div>
                 <div className="grey-fade-over"></div>
-                <div className="crafts-content container">
+                {/* <div className="crafts-content container">
                     <div className="row justify-center">
                         <div className="col-lg-8">
                             <div className="crafts-hero-panel pb-[30px]">
@@ -68,7 +68,7 @@ export default () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
