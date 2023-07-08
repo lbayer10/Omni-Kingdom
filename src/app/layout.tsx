@@ -2,6 +2,7 @@ import './globals.css';
 import { Inter } from 'next/font/google';
 import { PlayerContainer } from '@/containers/player';
 import { Header } from "@/components/layout/header";
+import { Footer } from "@/containers/layout/footer";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,6 +29,8 @@ export default function RootLayout({
 
                 {children}
                 <PlayerContainer />
+
+                <Footer />
             </body>
         </html>
     )
