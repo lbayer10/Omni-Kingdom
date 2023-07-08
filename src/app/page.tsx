@@ -206,8 +206,6 @@ export default function Home() {
 
             </div>
             <Divider />
-
-            <div className="scroll-to-top"><i className="fa fa-angle-up"></i></div>
         </main>
     )
 }
