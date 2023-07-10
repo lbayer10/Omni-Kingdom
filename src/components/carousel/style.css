@@ -11,10 +11,6 @@
     right: 0;
     left: 0;
     display: flex;
-    overflow-x: hidden;
-    counter-reset: item;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
 }
 
 .carousel_slide {
@@ -154,4 +150,40 @@
     width: 12px !important;
     height: 12px !important;
     background-color: #000000;
+}
+
+.slick-prev {
+    z-index: 1000;
+    left: -70px;
+    width: 86px;
+    height: 56px;
+    transition: hover .2s;
+    background: url('../../assets/img/components/button/carousel-sprite.png') no-repeat 0 0 !important;
+}
+
+.slick-prev:hover {
+    background: url('../../assets/img/components/button/carousel-sprite.png') no-repeat -86px 0 !important;
+}
+
+.slick-prev:before {
+    content: '';
+}
+
+.slick-next {
+    opacity: 1;
+    display: block !important;
+    z-index: 1000 !important;
+    width: 86px;
+    height: 56px;
+    right: -70px;
+    transition: opacity .2s;
+    background: url('../../assets/img/components/button/carousel-sprite.png') no-repeat -172px 0 !important;
+}
+
+.slick-next:hover {
+    background: url('../../assets/img/components/button/carousel-sprite.png') no-repeat -258px 0 !important;
+}
+
+.slick-next:before {
+    content: '';
 }

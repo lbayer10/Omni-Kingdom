@@ -25,8 +25,6 @@ export const Carousel = ({
 }: CarouselProps) => {
     const sliderRef = useRef<Slider>(null);
 
-    console.log(images)
-
     return (
         <section className="carousel" aria-label="Gallery">
             <div className="carousel-corner carousel-corner-top-left"></div>
@@ -37,6 +35,7 @@ export const Carousel = ({
             <div className="carousel-border carousel-border-right"></div>
             <div className="carousel-border carousel-border-bottom"></div>
             <div className="carousel-border carousel-border-left"></div>
+
             <Slider className="carousel_viewport" {...settings} ref={sliderRef}>
                 {images.map((item, index) => (
                     <div key={index} className="carousel_slide" style={{backgroundImage: `url(${item})`}}>
