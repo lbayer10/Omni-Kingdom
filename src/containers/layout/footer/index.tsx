@@ -3,7 +3,7 @@ export const Footer = () => {
         <div className="section padding-top background-dark-2 over-hide footer-1 dark">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-3">
+                    <div className="col-md-4">
                         <h6>Home concepts</h6>
                         <ul className="list-style">
                             <li><a href="digital-agency.html">Digital Agency</a></li>
@@ -13,7 +13,7 @@ export const Footer = () => {
                             <li><a href="corporate.html">Home Corporate</a></li>
                         </ul>
                     </div>
-                    <div className="col-md-3 mt-4 mt-md-0">
+                    <div className="col-md-4 mt-4 mt-md-0">
                         <h6>Picked Pages</h6>
                         <ul className="list-style">
                             <li><a href="portfolio-grid-3col.html">Portfolio Grid</a></li>
@@ -23,17 +23,7 @@ export const Footer = () => {
                             <li><a href="contact-map.html">Contact Map</a></li>
                         </ul>
                     </div>
-                    <div className="col-md-3 mt-4 mt-md-0">
-                        <h6>Interesting</h6>
-                        <ul className="list-style">
-                            <li><a href="about-company.html">About</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="contact-modern.html">Contact</a></li>
-                            <li><a href="shop-grid-sidebar.html">Shop</a></li>
-                            <li><a href="create-account.html">Create Account</a></li>
-                        </ul>
-                    </div>
-                    <div className="col-md-3 mt-4 mt-md-0 logo-footer-100">
+                    <div className="col-md-4 mt-4 mt-md-0 logo-footer-100">
                         {/* <Image width={100} height={100} src="/img/logo-light.png" alt="" className="mb-5" /> */}
                         <div className="separator-wrap">
                             <span className="separator"><span className="separator-line dashed"></span></span>

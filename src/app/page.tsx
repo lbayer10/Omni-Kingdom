@@ -3,6 +3,8 @@ import { Divider } from "@/components/divider";
 import { Carousel } from "@/components/carousel";
 import { Typography } from "@/components/typography";
 
+import { Footer } from "@/containers/layout/footer";
+
 import { heroCard, weaponCard, authorCard, journeyList } from "@/@fake_db/home";
 import "./style.css";
 
@@ -206,6 +208,8 @@ export default function Home() {
 
             </div>
             <Divider />
+
+            <Footer />
         </main>
     )
 }
