@@ -8,7 +8,7 @@
     border: 1px solid #420f00;
     padding: 0;
     height: auto;
-    background: url('../../../assets/img/components/pagination/button.png') -35px -130px;
+    background: url('../../assets/img/components/pagination/button.png') -35px -130px;
     box-shadow: 0 0 3px #000;
 }
 
@@ -27,7 +27,7 @@
     border: 1px solid #420f00;
     padding: 0;
     height: auto;
-    background: url('../../../assets/img/components/pagination/button.png') -35px -128px;
+    background: url('../../assets/img/components/pagination/button.png') -35px -128px;
     box-shadow: 0 0 3px #000;
 }
 
