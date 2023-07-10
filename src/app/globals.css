@@ -95,6 +95,10 @@ body::-webkit-scrollbar-thumb {
 
 .grey-fade-over {
     z-index: 1 !important;
+}
+
+.grey-fade-over-more {
+    z-index: 1 !important;
     opacity: .5 !important;
 }
 
