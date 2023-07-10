@@ -1,7 +1,8 @@
-.omni-table {
+.table-component {
     border-collapse: collapse;
     border-spacing: 0;
     background-color: #12110f;
+    margin: auto;
 }
 
 .table-sort-link, .table-sort-tab {
@@ -30,11 +31,11 @@
     border-right-color: #2d0900;
 }
 
-.omni-table tbody tr:nth-child(even) {
+.table-component tbody tr:nth-child(even) {
     background-color: #171614;
 }
 
-.omni-table tbody td {
+.table-component tbody td {
     padding: 15px;
     border-bottom: 1px solid #28241d;
     white-space: nowrap;

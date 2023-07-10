@@ -29,9 +29,6 @@ export const Pagination = ({
 }: PaginationProp) => {
 
     const SubPagination = useMemo(() => {
-        console.log("selectedPage: ", selectedPage);
-        console.log("total: ", total);
-        console.log("pageSize: ", pageSize);
         const items = [];
         const availableIndex = Math.ceil(total / pageSize);
         let startIndex = selectedPage - 3 > 0 ? selectedPage - 3 : 0;
