@@ -66,6 +66,8 @@ export const Table = ({
         const startIndex = selectedPage * pageSize;
         const endIndex = Number(startIndex) + Number(pageSize);
         const rowsToRender = dataSource.slice(startIndex, endIndex);
+
+        console.log("rowsToRender: ", rowsToRender);
         return (
             <>
                 {rowsToRender.map((rowData: any, index: number) => (
@@ -80,11 +82,10 @@ export const Table = ({
         );
     });
 
-
     const handlePageChange = useCallback((page: any) => setSelectedPage(page), []);
 
     return (
-        <div className='omni-table-container'>
+        <div className='table-container'>
             <div className='mb-3'>
                 <Pagination
                     total={dataSource.length}
@@ -94,7 +95,7 @@ export const Table = ({
                     setSelectedPage={handlePageChange}
                 />
             </div>
-            <table className={['omni-table', `omni-table-${type}`, className].join(' ')}>
+            <table className={['table-component', `omni-table-${type}`, className].join(' ')}>
                 <thead>
                     <THeadContent />
                 </thead>
