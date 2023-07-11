@@ -43,9 +43,7 @@ export const Pagination = ({
         for (let i = startIndex; i < endIndex; i++) {
             items.push(
                 <li className={i === selectedPage ? 'omni-selected-item' : ''} key={i} onClick={() => setSelectedPage(i)}>
-                    <a>
-                        <span>{i + 1}</span>
-                    </a>
+                    <span>{i + 1}</span>
                 </li>
             );
         }
@@ -53,20 +51,16 @@ export const Pagination = ({
     }, [selectedPage, total, pageSize]);
 
     return (
-        <div className='omni-pagination flex justify-between'>
+        <div className='pagination flex justify-between'>
             <Select options={pageOptions} defaultOption={pageSize} onChange={setPageSize} />
 
             <ul>
                 <li onClick={() => setSelectedPage(0)}>
-                    <a href='#'>
-                        <span>First</span>
-                    </a>
+                    <span>First</span>
                 </li>
                 {SubPagination}
                 <li onClick={() => setSelectedPage(Math.ceil(total / pageSize) - 1)}>
-                    <a href='#'>
-                        <span>Last</span>
-                    </a>
+                    <span>Last</span>
                 </li>
             </ul>
         </div>

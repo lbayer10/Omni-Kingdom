@@ -1,11 +1,4 @@
-export interface ColumnType {
-    key: string;
-    title: string;
-    dataIndex: string;
-    width?: number;
-    align?: "left" | "center" | "right";
-    render?: React.ReactElement;
-}
+import { ColumnType } from "@/@types/table";
 
 export const rankingColumn: ColumnType[] = [
     {
