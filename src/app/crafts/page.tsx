@@ -3,7 +3,6 @@ import Image from "next/image";
 import { PlayerStates } from "@/containers/player/PlayerStates";
 import { PlayerFlag } from '@/containers/player/PlayerFlag';
 import { InventoryContainer } from "@/containers/inventory";
-import { progressList } from '@/@fake_db/home';
 
 import "./style.css";
 
@@ -24,7 +23,7 @@ export default () => {
                                     </div>
                                     <div className="col-lg-12 col-xl-7">
                                         <div className="crafts-hero-title text-center">Hero</div>
-                                        <div>
+                                        {/* <div>
                                             <ul className="crafts-ability pt-[70px] flex justify-around">
                                                 <li>
                                                     <Image src='/assets/img/personal/damage.svg' width={20} height={20} alt="" />
@@ -39,7 +38,7 @@ export default () => {
                                                     <span className="crafts-ability-value">324</span>
                                                 </li>
                                             </ul>
-                                        </div>
+                                        </div> */}
                                         <div className="flex justify-around mt-3">
                                             <div className="flex flex-col justify-around">
                                                 <div className="crafts-item"></div>
