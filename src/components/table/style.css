@@ -3,6 +3,7 @@
     border-spacing: 0;
     background-color: #12110f;
     margin: auto;
+    width: 100%;
 }
 
 .table-sort-link, .table-sort-tab {

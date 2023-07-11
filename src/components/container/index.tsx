@@ -24,7 +24,7 @@ export const Container = ({
             }
             <div className={["content-container", className].join(" ")}>
                 <div className="content-body flex flex-col justify-between">
-                    <div className="content-list h-[650px]">
+                    <div className="content-list px-3 h-[650px]">
                         {children}
                     </div>
                 </div>
