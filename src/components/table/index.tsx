@@ -2,26 +2,8 @@
 
 import React, { useCallback, useState, memo } from 'react';
 import { Pagination } from '@/components/pagination';
+import { TableProp } from '@/@types/table';
 import './style.css';
-
-export interface TableProp {
-    type?: "default" | "primary";
-    column?: Array<ColumnType>;
-    dataSource?: any;
-    className?: string;
-    leaderboard?: any;
-    total?: any;
-    searchbar?: any;
-}
-  
-export interface ColumnType {
-    key: string;
-    title: string;
-    dataIndex: string;
-    width?: number;
-    align?: "left" | "center" | "right";
-    render?: React.ReactElement;
-}
 
 type TableRowProps = {
     index: number;
@@ -67,7 +49,6 @@ export const Table = ({
         const endIndex = Number(startIndex) + Number(pageSize);
         const rowsToRender = dataSource.slice(startIndex, endIndex);
 
-        console.log("rowsToRender: ", rowsToRender);
         return (
             <>
                 {rowsToRender.map((rowData: any, index: number) => (
@@ -95,7 +76,7 @@ export const Table = ({
                     setSelectedPage={handlePageChange}
                 />
             </div>
-            <table className={['table-component', `omni-table-${type}`, className].join(' ')}>
+            <table className={['table-component', `table-component-${type}`, className].join(' ')}>
                 <thead>
                     <THeadContent />
                 </thead>

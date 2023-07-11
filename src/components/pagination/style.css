@@ -1,9 +1,5 @@
-.omni-pagination li {
-    display: inline-block;
+.pagination li {
     margin-left: 4px;
-}
-
-.omni-pagination li a {
     display: inline-block;
     border: 1px solid #420f00;
     padding: 0;
@@ -12,17 +8,17 @@
     box-shadow: 0 0 3px #000;
 }
 
-.omni-pagination li a:hover, .omni-pagination .omni-selected-item {
+.pagination li:hover, .pagination .omni-selected-item {
     background-position: -55px -169px;
     border-color: #811d00 !important;
 }
 
-.omni-pagination li a:hover span, .omni-pagination .omni-selected-item span  {
+.pagination li:hover span, .pagination .omni-selected-item span  {
     color: #f7f1e7 !important;
     border: 1px solid #a07c6a;
 }
 
-.omni-pagination li a {
+.pagination li {
     display: inline-block;
     border: 1px solid #420f00;
     padding: 0;
@@ -31,7 +27,7 @@
     box-shadow: 0 0 3px #000;
 }
 
-.omni-pagination li a span {
+.pagination li span {
     padding: 0 7px;
     display: block;
     margin: 0;
